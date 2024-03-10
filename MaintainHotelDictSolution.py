@@ -46,10 +46,8 @@ def remove_hotel_by_value(hotel):
 
 
 def edit_hotel(hotel, key, val):
-    for dict in hotel_list:
-        if hotel == dict:
-            dict[key] = val
-            print(f"Updated hotel details: {dict}")
+    hotel[key] = val
+    print(f"Updated hotel details: {hotel}")
 
 
 # End: Definition all variables and functions
